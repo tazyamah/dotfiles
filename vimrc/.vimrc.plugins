@@ -1,0 +1,6 @@
+" buftabs
+let g:buftabs_only_basename=1
+let g:buftabs_in_statusline=1
+
+" zen-coding
+let g:user_zen_settings = { 'html': { 'indentation': '  ' }, 'eruby': { 'extends': 'html' }, 'ruby': { 'extends': 'html' }  }

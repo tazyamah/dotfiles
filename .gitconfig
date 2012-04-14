@@ -1,0 +1,15 @@
+[user]
+	name  = Tatsuya Suzuki
+	email = tazyamah@gmail.com
+[merge]
+	keepBackup = false;
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[color]
+	ui = auto
+[core]
+	excludesfile = ~/.gitignore

@@ -1,0 +1,17 @@
+filetype plugin indent off
+
+if has('vim_starting')
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('$HOME/.vim/bundle'))
+endif
+
+
+" Plugins
+NeoBundle 'Shugo/neobundle.vim'
+NeoBundle 'vim-scripts/buftabs'
+NeoBundle 'vim-scripts/brookstream'
+NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'https://raw.github.com/taku-o/downloads/master/commentout.vim'
+
+filetype plugin indent on
