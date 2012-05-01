@@ -40,3 +40,11 @@ endfunction
 
 nnoremap <C-w>s :call <SID>good_size()<Cr>
 
+" vimgrep for rails
+command! -complete=file -nargs=+ RailsGrep call s:grep([<f-args>])
+function! s:grep(args)
+  execute 'vimgrep' '/' . a:args[0] . '/gj ' . './app/**/* ./lib/**/* ./config/**/* '
+  if len(getqflist()) != 0 | copen | endif
+endfunction
+
+cnoremap rg RailsGrep
