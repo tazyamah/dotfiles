@@ -5,4 +5,5 @@ source ~/dotfiles/vimrc/.vimrc.indent
 source ~/dotfiles/vimrc/.vimrc.plugins
 source ~/dotfiles/vimrc/.vimrc.keymap
 source ~/dotfiles/vimrc/.vimrc.commentout
+source ~/dotfiles/vimrc/.vimrc.neocomplcache
 
