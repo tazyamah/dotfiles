@@ -12,6 +12,5 @@ NeoBundle 'vim-scripts/buftabs'
 NeoBundle 'vim-scripts/brookstream'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'https://raw.github.com/taku-o/downloads/master/commentout.vim'
 
 filetype plugin indent on
