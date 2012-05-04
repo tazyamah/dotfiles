@@ -8,7 +8,7 @@ endif
 
 " Plugins
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
+"NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'vim-scripts/buftabs'
 NeoBundle 'vim-scripts/brookstream'
