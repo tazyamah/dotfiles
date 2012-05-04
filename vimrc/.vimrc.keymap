@@ -47,4 +47,5 @@ function! s:grep(args)
   if len(getqflist()) != 0 | copen | endif
 endfunction
 
-cnoremap rg RailsGrep
+cnoreabbr rg RailsGrep
+
