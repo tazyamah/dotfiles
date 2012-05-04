@@ -35,7 +35,7 @@ set smartcase
 
 " status line
 set laststatus=2
-set statusline=%n:%f%m%r%h%w%=[%{&fileencoding}][%l,%c(%p)]
+set statusline=%n:%f%m%r%h%w%=[%{&fileencoding}:%{&fileformat}][%l,%c(%p)]
 
 " other
 set browsedir=buffer
