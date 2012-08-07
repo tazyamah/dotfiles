@@ -13,3 +13,5 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+[github]
+  user = tazyamah
