@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <item>
+      <name>LeaveInsMode(VIM Escape Keymap) with EISUU(Terminal)</name>
+      <identifier>private.app_terminal_esc_with_eisuu</identifier>
+      <only>TERMINAL</only>
+      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+      <autogen>--KeyToKey-- KeyCode::JIS_BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+      <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+    <item>
+      <name>Swap Backquote(`=Shift+@) and Quote('=Shift+7)</name>
+      <identifier>private.app_swap_backquote_and_quote</identifier>
+      <autogen>--KeyToKey-- KeyCode::JIS_ATMARK, VK_SHIFT, KeyCode::KEY_7, VK_SHIFT</autogen>
+      <autogen>--KeyToKey-- KeyCode::KEY_7, VK_SHIFT, KeyCode::BACKQUOTE</autogen>
+    </item>
+  </list>
+</root>

@@ -1,6 +1,6 @@
-" backtick <-> singlequote
-inoremap ' `
-inoremap ` '
+"" backtick <-> singlequote
+"inoremap ' `
+"inoremap ` '
 
 " highlight off
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
