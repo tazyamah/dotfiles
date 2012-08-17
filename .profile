@@ -1,17 +1,18 @@
 export CLICOLOR=1
 export EDITOR=vim
-export PATH=/usr/local/bin:$PATH
+#export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/homebrew/bin:$PATH
 PS1=\\u:\\W$
 
 
 # rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"    # This loads RVM into a shell session.
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion # rvm shell completion
 
 # for postgresql
 export ARCHFLAGS="-arch x86_64"
-alias pgserver_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgserver_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pgserver_start='pg_ctl -D $HOME/homebrew/var/postgres -l $HOME/homebrew/var/postgres/server.log start'
+alias pgserver_stop='pg_ctl -D $HOME/homebrew/var/postgres stop -s -m fast'
 
 # sharing history
 function share_history {        # 以下の内容を関数として定義
@@ -26,4 +27,3 @@ export HISTSIZE=9999            # 履歴のMAX保存数を指定
 # other aliases
 alias :e=vim
 alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
-
