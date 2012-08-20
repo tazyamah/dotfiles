@@ -2,8 +2,11 @@ export CLICOLOR=1
 export EDITOR=vim
 #export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
-PS1=\\u:\\W$
 
+# bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"    # This loads RVM into a shell session.
@@ -27,3 +30,10 @@ export HISTSIZE=9999            # 履歴のMAX保存数を指定
 # other aliases
 alias :e=vim
 alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
+
+
+# prompt
+#RPROMPT_CONTENTS="$(~/.rvm/bin/rvm-prompt)"
+#RPROMPT='\[\e[$[COLUMNS-$(echo ${RPROMPT_CONTENTS} | wc -c)]C\e[1;35m${RPROMPT_CONTENTS}\e[0m\e[$[COLUMNS]D\]'
+PS1=\\u:\\W\$
+
