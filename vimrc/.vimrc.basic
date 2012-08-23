@@ -14,7 +14,7 @@ highlight CursorLine ctermbg=black guibg=black
 colorscheme brookstream
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-autocmd WinEnter * match WhitespaceEOL /\s\+$/
+autocmd WinEnter,VimEnter * match WhitespaceEOL /\s\+$/
 
 " tab/indent(default setting)
 filetype on
