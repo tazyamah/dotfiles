@@ -11,7 +11,9 @@ augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=black
-colorscheme brookstream
+if filereadable(expand("~/.vim/bundle/brookstream/colors/brookstream.vim"))
+  colorscheme brookstream
+endif
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 autocmd WinEnter,VimEnter * match WhitespaceEOL /\s\+$/
