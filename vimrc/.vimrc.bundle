@@ -11,10 +11,11 @@ NeoBundle 'Shougo/neobundle.vim'
 "NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'vim-scripts/buftabs'
+"NeoBundle 'vim-scripts/buftabs'
 NeoBundle 'vim-scripts/brookstream'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-scripts/sudo.vim'
+NeoBundle 'vim-scripts/QuickBuf'
 
 filetype plugin indent on
