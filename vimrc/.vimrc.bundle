@@ -16,6 +16,6 @@ NeoBundle 'vim-scripts/brookstream'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'vim-scripts/QuickBuf'
+NeoBundle 'vim-scripts/DumbBuf'
 
 filetype plugin indent on

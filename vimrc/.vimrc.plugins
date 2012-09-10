@@ -13,5 +13,5 @@ let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 
-" QuickBuf
-let g:qb_hotkey = "<space><space>"
+" DumbBuf http://vim.g.hatena.ne.jp/tyru/20091030
+let g:dumbbuf_hotkey = "<space><space>"
