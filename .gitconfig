@@ -15,3 +15,7 @@
 	excludesfile = ~/.gitignore
 [github]
   user = tazyamah
+[credential]
+    helper = osxkeychain
+[credential "https://github.com"]
+    username = tazyamah
