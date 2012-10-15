@@ -20,8 +20,8 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 
 "Change Buf
-noremap <Space> :bn!<CR>
-noremap <Tab> :bp!<CR>
+noremap <Tab> :bn!<CR>
+noremap <S-Tab> :bp!<CR>
 
 "Window
 nnoremap sh <C-w>h
