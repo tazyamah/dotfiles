@@ -30,7 +30,7 @@ export HISTSIZE=9999            # 履歴のMAX保存数を指定
 # other aliases
 alias :e=vim
 alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
-
+alias titanium="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.v20121105141612/titanium.py"
 
 # prompt
 #RPROMPT_CONTENTS="$(~/.rvm/bin/rvm-prompt)"
