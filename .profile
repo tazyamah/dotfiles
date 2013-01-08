@@ -27,6 +27,15 @@ PROMPT_COMMAND='share_history'  # 上記関数をプロンプト毎に自動実�
 shopt -u histappend             # .bash_history追記モードは不要なのでOFFに
 export HISTSIZE=9999            # 履歴のMAX保存数を指定
 
+# phpenv
+if [ -f ~/.phpenv/bin/phpenv ]; then
+    export PATH="$PATH:~/.phpenv/bin"
+    eval "$(phpenv init -)"
+fi
+
+# enable z command
+[[ -r `brew --prefix`/etc/profile.d/z.sh ]] && . `brew --prefix`/etc/profile.d/z.sh
+
 # other aliases
 alias :e=vim
 alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
