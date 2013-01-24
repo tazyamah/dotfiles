@@ -4,6 +4,9 @@ export EDITOR=vim
 export PATH=$HOME/homebrew/bin:$PATH
 
 # bash completion
+BASH_COMPLETION=`brew --prefix`/etc/bash_completion
+BASH_COMPLETION_DIR=`brew --prefix`/etc/bash_completion.d
+BASH_COMPLETION_COMPAT_DIR=`brew --prefix`/etc/bash_completion.d
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
@@ -40,6 +43,8 @@ fi
 alias :e=vim
 alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
 alias titanium="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.v20121105141612/titanium.py"
+
+export CC=gcc-4.2
 
 # prompt
 #RPROMPT_CONTENTS="$(~/.rvm/bin/rvm-prompt)"
