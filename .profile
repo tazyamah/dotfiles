@@ -2,6 +2,7 @@ export CLICOLOR=1
 export EDITOR=vim
 #export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/homebrew/bin:$PATH
+export HOMEBREW_NO_EMOJI=i_hate_emoji
 
 # bash completion
 BASH_COMPLETION=`brew --prefix`/etc/bash_completion
@@ -45,6 +46,8 @@ alias scalc='/Applications/LibreOffice.app/Contents/MacOS/scalc'
 alias titanium="$HOME/Library/Application\ Support/Titanium/mobilesdk/osx/3.0.0.v20121105141612/titanium.py"
 
 export CC=gcc-4.2
+#export LDFLAGS=-L/Users/tazyamah/homebrew/opt/sqlite/lib
+#export CPPFLAGS-I/Users/tazyamah/homebrew/opt/sqlite/include
 
 # prompt
 #RPROMPT_CONTENTS="$(~/.rvm/bin/rvm-prompt)"

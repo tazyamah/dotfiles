@@ -13,9 +13,12 @@
 	ui = auto
 [core]
 	excludesfile = ~/.gitignore
+	shared = true
 [github]
   user = tazyamah
 [credential]
     helper = osxkeychain
 [credential "https://github.com"]
     username = tazyamah
+[http]
+	sslVerify = false
