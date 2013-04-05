@@ -54,3 +54,18 @@ export CC=gcc-4.2
 #RPROMPT='\[\e[$[COLUMNS-$(echo ${RPROMPT_CONTENTS} | wc -c)]C\e[1;35m${RPROMPT_CONTENTS}\e[0m\e[$[COLUMNS]D\]'
 PS1=\\u:\\W\$
 
+function a()
+{
+  fullpath=`pwd`
+  paths=( `echo $fullpath | tr -s '/', ' '` )
+  hist=
+  for dir in ${paths[@]};do
+    hist="$hist/$dir"
+    if [ -f $hist/.env ]; then
+      echo $hist/.env
+      source $hist/.env
+    else
+      echo $hist/.env
+    fi
+  done
+}
