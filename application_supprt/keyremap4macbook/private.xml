@@ -5,7 +5,7 @@
       <name>LeaveInsMode(VIM Escape Keymap) with EISUU(Terminal)</name>
       <identifier>private.app_terminal_esc_with_eisuu</identifier>
       <only>TERMINAL</only>
-      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+      <!-- <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen> -->
       <autogen>--KeyToKey-- KeyCode::JIS_BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
       <autogen>--KeyToKey-- KeyCode::C, VK_CONTROL, KeyCode::C, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
     </item>
@@ -14,6 +14,12 @@
       <identifier>private.app_swap_backquote_and_quote</identifier>
       <autogen>--KeyToKey-- KeyCode::JIS_ATMARK, VK_SHIFT, KeyCode::KEY_7, VK_SHIFT</autogen>
       <autogen>--KeyToKey-- KeyCode::KEY_7, VK_SHIFT, KeyCode::BACKQUOTE</autogen>
+    </item>
+    <item>
+      <name>GoodBye ESC! (ESC to F1 only Terminal)</name>
+      <identifier>private.app_goodbye_esc_terminal</identifier>
+      <only>TERMINAL</only>
+      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::F1</autogen>
     </item>
   </list>
 </root>
