@@ -8,15 +8,27 @@ endif
 
 " Plugins
 NeoBundle 'Shougo/neobundle.vim'
-"NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'vim-scripts/buftabs'
 NeoBundle 'vim-scripts/brookstream'
 NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'mileszs/ack.vim'
 NeoBundle 'vim-scripts/sudo.vim'
-NeoBundle 'vim-scripts/DumbBuf'
-NeoBundle 'kakkyz81/evervim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+    \ 'windows' : 'make -f make_mingw32.mak',
+    \ 'cygwin' : 'make -f make_cygwin.mak',
+    \ 'mac' : 'make -f make_mac.mak',
+    \ 'unix' : 'make -f make_unix.mak',
+  \ },
+\ }
+NeoBundle 'rking/ag.vim'
 
 filetype plugin indent on
+
+" olds
+"NeoBundle 'vim-scripts/buftabs'
+"NeoBundle 'mileszs/ack.vim'
+"NeoBundle 'vim-scripts/DumbBuf'
+"NeoBundle 'kakkyz81/evervim'
+

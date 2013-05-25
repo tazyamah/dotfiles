@@ -1,1 +1,1 @@
-my dotfiles. (for mac)
+my dotfiles. (for mac/linux)
