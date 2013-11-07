@@ -1,7 +1,7 @@
 export CLICOLOR=1
 export EDITOR=vim
 export HOMEBREW_PATH=$HOME/homebrew
-
+export LESSCHARSET=utf-8
 
 # for mac
 if [ `uname` = "Darwin" ]; then
