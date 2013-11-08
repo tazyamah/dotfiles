@@ -32,7 +32,7 @@ if [ `uname` = "Darwin" ]; then
     alias pgserver_stop='pg_ctl -D $HOME/homebrew/var/postgres stop -s -m fast'
 
 # for linux(vm)
-elif [`uname` = "Linux"]; then
+elif [ `uname` = "Linux" ]; then
     if [ -f ~/.phpenv/bin/phpenv ]; then
         . /etc/bash_completion.d/git
     fi
