@@ -17,8 +17,10 @@
 [github]
   user = tazyamah
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
 [credential "https://github.com"]
-    username = tazyamah
+  username = tazyamah
 [http]
 	sslVerify = false
+[alias]
+  delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
