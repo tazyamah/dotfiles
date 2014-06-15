@@ -5,13 +5,13 @@ if has('vim_starting')
   call neobundle#rc(expand('$HOME/.vim/bundle'))
 endif
 
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Plugins
-NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'vim-scripts/brookstream'
-NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc', {
@@ -24,6 +24,17 @@ NeoBundle 'Shougo/vimproc', {
 \ }
 NeoBundle 'rking/ag.vim'
 
+" for Syntax Highlight
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'joker1007/vim-ruby-heredoc-syntax'
+NeoBundle 'joker1007/vim-markdown-quote-syntax'
+
+call neobundle#end()
+
 filetype plugin indent on
 
 " olds
@@ -31,4 +42,5 @@ filetype plugin indent on
 "NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'vim-scripts/DumbBuf'
 "NeoBundle 'kakkyz81/evervim'
+"NeoBundle 'mattn/zencoding-vim'
 
