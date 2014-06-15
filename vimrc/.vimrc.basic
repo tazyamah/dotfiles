@@ -30,6 +30,8 @@ set smarttab
 set nosmartindent
 set autoindent
 set backspace=indent,eol,start
+set modeline
+set modelines=5
 
 " search
 set incsearch
