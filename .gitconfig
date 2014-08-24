@@ -22,5 +22,7 @@
   username = tazyamah
 [http]
 	sslVerify = false
+[push]
+  default = current
 [alias]
   delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
