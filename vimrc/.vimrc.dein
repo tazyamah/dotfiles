@@ -1,0 +1,71 @@
+filetype plugin indent off
+
+if &compatible
+  set nocompatible
+endif
+
+let s:use_dein = 1
+
+let s:vimdir = $HOME . "/.vim"
+if has("vim_starting")
+  if ! isdirectory(s:vimdir)
+    call system("mkdir " . s:vimdir)
+  endif
+endif
+
+let s:dein_dir = expand('~/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+endif
+
+
+
+"if dein#load_state(s:dein_dir)
+"  execute '!echo "internal"'
+  call dein#begin(expand(s:dein_dir))
+
+  call dein#add('Shougo/dein.vim')
+"  call dein#add('Shougo/vimproc.vim', 'make')
+  call dein#add('nathanaelkane/vim-indent-guides')
+  call dein#add('vim-scripts/sudo.vim')
+  call dein#add('vim-scripts/brookstream', {'script_type' : 'colors'})
+  colorscheme brookstream
+
+  if has('nvim')
+    call dein#add('Shougo/deoplete.nvim')
+  else
+    call dein#add('Shougo/neocomplcache')
+  endif
+
+  " for Syntax Highlight
+  call dein#add('kchmck/vim-coffee-script')
+  call dein#add('othree/html5.vim')
+  call dein#add('chase/vim-ansible-yaml')
+  call dein#add('tpope/vim-rails')
+  call dein#add('vim-ruby/vim-ruby')
+  call dein#add('joker1007/vim-ruby-heredoc-syntax')
+  call dein#add('joker1007/vim-markdown-quote-syntax')
+  call dein#add('vim-scripts/AnsiEsc.vim')
+
+
+  call dein#end()
+"  colorscheme brookstream
+"  call dein#save_state()
+"else
+"  execute '!echo "external"'
+"endif
+
+if dein#tap('neocomplcache') && has('nvim')
+  source ~/dotfiles/vimrc/.vimrc.neocomplcache
+end
+
+if !has('vim_starting') && dein#check_install()
+  " Installation check.
+  call dein#install()
+endif
+filetype plugin indent on

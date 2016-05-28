@@ -1,49 +1,48 @@
-if 1
-  filetype plugin indent off
+filetype plugin indent off
 
-  if has('vim_starting')
-    set runtimepath+=$HOME/.vim/bundle/neobundle.vim
-  endif
-
-  call neobundle#begin(expand('$HOME/.vim/bundle'))
-
-  " Let NeoBundle manage NeoBundle
-  NeoBundleFetch 'Shougo/neobundle.vim'
-
-  " Plugins
-  NeoBundle 'Shougo/neocomplcache'
-  NeoBundle 'nathanaelkane/vim-indent-guides'
-  NeoBundle 'vim-scripts/brookstream'
-  NeoBundle 'vim-scripts/sudo.vim'
-  NeoBundle 'Shougo/unite.vim'
-  NeoBundle 'Shougo/vimproc', {
-    \ 'build' : {
-      \ 'windows' : 'make -f make_mingw32.mak',
-      \ 'cygwin' : 'make -f make_cygwin.mak',
-      \ 'mac' : 'make -f make_mac.mak',
-      \ 'unix' : 'make -f make_unix.mak',
-    \ },
-  \ }
-  NeoBundle 'rking/ag.vim'
-
-  " for Syntax Highlight
-  NeoBundle 'kchmck/vim-coffee-script'
-  NeoBundle 'othree/html5.vim'
-  NeoBundle 'chase/vim-ansible-yaml'
-  NeoBundle 'tpope/vim-rails'
-  NeoBundle 'vim-ruby/vim-ruby'
-  NeoBundle 'joker1007/vim-ruby-heredoc-syntax'
-  NeoBundle 'joker1007/vim-markdown-quote-syntax'
-
-  call neobundle#end()
-
-  filetype plugin indent on
-
-  " olds
-  "NeoBundle 'vim-scripts/buftabs'
-  "NeoBundle 'mileszs/ack.vim'
-  "NeoBundle 'vim-scripts/DumbBuf'
-  "NeoBundle 'kakkyz81/evervim'
-  "NeoBundle 'mattn/zencoding-vim'
-  NeoBundleCheck
+if has('vim_starting')
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim
 endif
+
+call neobundle#begin(expand('$HOME/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Plugins
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'vim-scripts/brookstream'
+NeoBundle 'vim-scripts/sudo.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc', {
+  \ 'build' : {
+    \ 'windows' : 'make -f make_mingw32.mak',
+    \ 'cygwin' : 'make -f make_cygwin.mak',
+    \ 'mac' : 'make -f make_mac.mak',
+    \ 'unix' : 'make -f make_unix.mak',
+  \ },
+\ }
+NeoBundle 'rking/ag.vim'
+
+" for Syntax Highlight
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'joker1007/vim-ruby-heredoc-syntax'
+NeoBundle 'joker1007/vim-markdown-quote-syntax'
+NeoBundle 'vim-scripts/AnsiEsc.vim'
+
+call neobundle#end()
+
+filetype plugin indent on
+
+" olds
+"NeoBundle 'vim-scripts/buftabs'
+"NeoBundle 'mileszs/ack.vim'
+"NeoBundle 'vim-scripts/DumbBuf'
+"NeoBundle 'kakkyz81/evervim'
+"NeoBundle 'mattn/zencoding-vim'
+NeoBundleCheck

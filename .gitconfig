@@ -27,3 +27,5 @@
   default = current
 [alias]
   delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+[push]
+  default = current

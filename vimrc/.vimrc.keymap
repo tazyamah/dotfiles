@@ -6,8 +6,8 @@
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 "ESC
-imap jk <ESC>
-imap ii <ESC>
+"imap jk <ESC>
+"imap ii <ESC>
 
 "backspace
 noremap <BS> 

@@ -1,7 +1,8 @@
 #! /usr/bin/bash -v
 
 # dotfiles
-ln -vsf ~/dotfiles/.vimrc ~/
+#ln -vsf ~/dotfiles/.vimrc ~/
+ln -vsf ~/dotfiles/.config ~/
 ln -vsf ~/dotfiles/.gitconfig ~/
 ln -vsf ~/dotfiles/.gitignore ~/
 ln -vsf ~/dotfiles/.profile ~/
