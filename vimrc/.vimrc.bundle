@@ -27,7 +27,7 @@ NeoBundle 'rking/ag.vim'
 
 " for Syntax Highlight
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'othree/html5.vim'
+" NeoBundle 'othree/html5.vim'
 NeoBundle 'chase/vim-ansible-yaml'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'vim-ruby/vim-ruby'

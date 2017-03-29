@@ -5,6 +5,9 @@ set ttyfast
 set cursorline
 set ambiwidth=double
 set fileformats=unix,dos,mac
+set t_Co=256
+"colorscheme atom-dark-256
+colorscheme brookstream
 augroup cch
 autocmd! cch
 autocmd WinLeave * set nocursorline
@@ -12,9 +15,6 @@ autocmd WinEnter,BufRead * set cursorline
 augroup END
 :hi clear CursorLine
 :hi CursorLine gui=underline
-if filereadable(expand("~/.vim/bundle/brookstream/colors/brookstream.vim"))
-  colorscheme brookstream
-endif
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
 autocmd WinEnter,VimEnter * match WhitespaceEOL /\s\+$/

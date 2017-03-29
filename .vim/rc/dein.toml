@@ -1,0 +1,51 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+#repo = 'nathanaelkane/vim-indent-guides'
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'vim-scripts/sudo.vim'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+hook_post_update = '''
+  if dein#util#_is_windows()
+    let cmd = 'tools\\update-dll-mingw'
+  elseif dein#util#_is_cygwin()
+    let cmd = 'make -f make_cygwin.mak'
+  elseif executable('gmake')
+    let cmd = 'gmake'
+  else
+    let cmd = 'make'
+  endif
+  let g:dein#plugin.build = cmd
+'''
+
+[[plugins]]
+repo = "Shougo/context_filetype.vim"
+
+[[plugins]]
+repo = 'joker1007/vim-ruby-heredoc-syntax'
+
+[[plugins]]
+repo = 'joker1007/vim-markdown-quote-syntax'
+
+[[plugins]]
+repo = 'vim-scripts/AnsiEsc.vim'
+
+[[plugins]]
+repo = 'othree/yajs.vim'
+
+[[plugins]]
+#repo = 'gosukiwi/vim-atom-dark'
+repo = 'vim-scripts/brookstream'
+

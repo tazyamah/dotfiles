@@ -2,3 +2,5 @@
 *.sw[po]
 .svn
 .rvmrc
+.vim/dein/*
+.config/*

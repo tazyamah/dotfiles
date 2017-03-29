@@ -1,0 +1,18 @@
+#[[plugins]]
+#repo = 'Shougo/neosnippet'
+#depends = ['neosnippet-snippets']
+#on_i = 1
+#on_ft = ['snippet']
+
+[[plugins]]
+repo = 'Shougo/neocomplete'
+if = 'has("lua")'
+if = '!has("nvim")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+if = 'has("nvim")'
+on_i = 1
+
